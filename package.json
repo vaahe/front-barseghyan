@@ -1,0 +1,38 @@
+{
+  "name": "front-barseghyan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "zip" : "gulp deployZIP --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vaahe",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "del": "^6.1.1",
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-version-number": "^0.2.4",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html-nosvg": "^1.1.1",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.56.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13"
+  }
+}

@@ -1,0 +1,90 @@
+@media (min-width: 375px) and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header > nav {
+    display: none;
+  }
+  header .logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 4.5rem;
+  }
+  header .logo > .burger {
+    display: block;
+  }
+  header > .mobile-menu {
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 80%;
+    background-color: #ffffff;
+    border-right: 1px solid #808080;
+  }
+  header > .mobile-menu > .mobile-menu-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    padding: 2rem;
+    border-bottom: 1px solid #808080;
+  }
+  header > .mobile-menu > .mobile-menu-content {
+    min-height: 100vw;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item {
+    padding: 1rem;
+    border-bottom: 1px solid;
+    margin: 0 1rem;
+    font-size: 18px;
+    list-style-type: none;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item > ul {
+    display: none;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item::after {
+    content: url("../img/svg/arrow_down.svg");
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item:hover .drop-menu {
+    display: block;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item > .drop-menu {
+    font-size: 14px;
+    list-style-type: none;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item > .drop-menu > li {
+    width: 30%;
+    border-bottom: 1px solid #808080;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item > .drop-menu > li > a {
+    color: #000000;
+    text-decoration: none;
+  }
+  header > .mobile-menu > .mobile-menu-content > .mobile-menu-item > .drop-menu > li > a:hover {
+    color: #808080;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .posts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0;
+  }
+  main .posts > .post {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  main .posts > .post > h3 {
+    line-height: 30px;
+  }
+  .hero-section {
+    display: none;
+  }
+}

@@ -1,0 +1,108 @@
+@media (min-width: 375px) and (max-width: 768px) {
+  header {
+    width: 100%;
+
+    > nav {
+      display: none;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      height: 4.5rem;
+
+      > .burger {
+        display: block;
+      }
+    }
+
+    > .mobile-menu {
+      position: absolute;
+      top: 0;
+      display: none;
+      width: 80%;
+      background-color: #ffffff;
+      border-right: 1px solid #808080;
+
+      > .mobile-menu-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4.5rem;
+        padding: 2rem;
+        border-bottom: 1px solid #808080;
+      }
+
+      > .mobile-menu-content {
+        min-height: 100vw;
+
+        > .mobile-menu-item {
+          padding: 1rem;
+          border-bottom: 1px solid;
+          margin: 0 1rem;
+          font-size: 18px;
+          list-style-type: none;
+
+          > ul {
+            display: none;
+          }
+
+          &::after {
+            content: url("../img/svg/arrow_down.svg");
+          }
+
+          &:hover .drop-menu {
+            display: block;
+          }
+
+          > .drop-menu {
+            font-size: 14px;
+            list-style-type: none;
+
+            > li {
+              width: 30%;
+              border-bottom: 1px solid #808080;
+              > a {
+                color: #000000;
+                text-decoration: none;
+
+                &:hover {
+                  color: #808080;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .posts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      margin: 0;
+
+      > .post {
+        width: 100%;
+        margin-top: 2rem;
+
+        > h3 {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    display: none;
+  }
+}
